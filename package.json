@@ -1,0 +1,24 @@
+{
+  "name": "bicycle",
+  "version": "1.0.0",
+  "description": "webside about bicycles",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraSadilenko/Bicycle.git"
+  },
+  "author": "yura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuraSadilenko/Bicycle/issues"
+  },
+  "homepage": "https://github.com/YuraSadilenko/Bicycle#readme",
+  "dependencies": {
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-server-livereload": "^1.9.2"
+  }
+}
