@@ -12,4 +12,22 @@ html {
   height: 95vh;
   background-image: url(../../images/header.jpg);
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  padding: 2rem 0; }
+
+.navigation {
+  font-size: 1.7rem;
+  text-transform: uppercase; }
+  .navigation__list {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navigation__item {
+    list-style: none;
+    margin: 0 3rem;
+    transition: .3s; }
+    .navigation__item:hover {
+      transform: scale(1.1); }
+  .navigation__link {
+    text-decoration: none;
+    color: #4d4959; }
