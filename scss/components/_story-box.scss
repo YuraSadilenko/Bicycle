@@ -2,6 +2,11 @@
     text-align: center;
     font-size: 2rem;
 
+    &__image:hover {
+        animation: 1s infinite rotScale;
+        animation-timing-function: linear;
+    }
+
     &__text {
         color: $text-color;
         line-height: 1.7;

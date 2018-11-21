@@ -1,3 +1,9 @@
+@keyframes rotScale {
+  0% {
+    transform: rotate(0deg) scale(1.2); }
+  100% {
+    transform: rotate(360deg) scale(1.2); } }
+
 *,
 *::after,
 *::before {
@@ -25,6 +31,9 @@ html {
 .story-box {
   text-align: center;
   font-size: 2rem; }
+  .story-box__image:hover {
+    animation: 1s infinite rotScale;
+    animation-timing-function: linear; }
   .story-box__text {
     color: #8c8e90;
     line-height: 1.7; }
