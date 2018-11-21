@@ -1,0 +1,10 @@
+.story-box {
+    text-align: center;
+    font-size: 2rem;
+
+    &__text {
+        color: $text-color;
+        line-height: 1.7;
+    }
+}
+
