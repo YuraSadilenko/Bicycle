@@ -101,7 +101,8 @@ html {
 
 .presentation__wrap {
   position: relative;
-  transition: all 1s; }
+  transition: all 1s;
+  background-color: #fff; }
   .presentation__wrap--one:hover {
     grid-column: 3 / 4;
     grid-row: 1 / 3; }
