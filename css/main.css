@@ -4,6 +4,18 @@
   100% {
     transform: rotate(360deg) scale(1.2); } }
 
+@keyframes translateGrid {
+  0% {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2; }
+  100% {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3; } }
+
+.animation-rotate:hover {
+  animation: 1s infinite rotScale;
+  animation-timing-function: linear; }
+
 *,
 *::after,
 *::before {
@@ -17,7 +29,16 @@ html {
 
 .heading__secondary {
   text-transform: uppercase;
-  color: #353738; }
+  color: #353738;
+  font-size: 2rem; }
+
+.paragraph {
+  color: #8c8e90;
+  line-height: 1.7; }
+  .paragraph--justify {
+    color: #8c8e90;
+    line-height: 1.7;
+    text-align: justify; }
 
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
@@ -28,15 +49,102 @@ html {
 .u-margin-bottom-big {
   margin-bottom: 7rem; }
 
+.u-text-center {
+  text-align: center; }
+
+.section-presentation__one {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40rem 15rem;
+  grid-template-areas: "ione ione tb" "ione ione bgone"; }
+
+.section-presentation__two {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40rem 15rem;
+  grid-template-areas: "tb itwo itwo" "bgtwo itwo itwo"; }
+
+.section-presentation__three {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40rem 15rem;
+  grid-template-areas: "ithree tb ifour" "ithree bgthree ifour"; }
+
+.section-presentation__img--1 {
+  background-image: url("../../images/bicycle_company.jpg");
+  background-size: cover;
+  grid-area: ione; }
+
+.section-presentation__img--2 {
+  background-image: url("../../images/vintage.jpg");
+  background-size: cover;
+  grid-area: itwo; }
+
+.section-presentation__img--3 {
+  background-image: url("../../images/bicycles1.jpg");
+  background-size: cover;
+  grid-area: ithree; }
+
+.section-presentation__img--4 {
+  background-image: url("../../images/bicycles2.jpg");
+  background-size: cover;
+  grid-area: ifour; }
+
+.section-presentation__text {
+  padding: 4rem 3rem;
+  text-align: center;
+  font-size: 1.7rem;
+  grid-area: tb; }
+
+.presentation__wrap {
+  position: relative;
+  transition: all 1s; }
+  .presentation__wrap--one:hover {
+    transform: translateY(20%);
+    grid-column: 3 / 4;
+    grid-row: 1 / 3; }
+  .presentation__wrap--two:hover {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; }
+  .presentation__wrap--three:hover {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3; }
+  .presentation__wrap:hover + ::after {
+    display: none; }
+  .presentation__wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    transform: translateY(50%) rotate(45deg); }
+
+.class-6 {
+  background-image: url("../../images/bg_one.jpg");
+  background-size: cover;
+  grid-area: bgone; }
+
+.class-7 {
+  background-image: url("../../images/bg__two.jpg");
+  background-size: cover;
+  grid-area: bgtwo; }
+
+.class-8 {
+  background-image: url("../../images/bg__three.jpg");
+  background-size: cover;
+  grid-area: bgthree; }
+
 .story-box {
   text-align: center;
   font-size: 2rem; }
-  .story-box__image:hover {
-    animation: 1s infinite rotScale;
-    animation-timing-function: linear; }
   .story-box__text {
-    color: #8c8e90;
-    line-height: 1.7; }
+    font-size: 2rem; }
 
 .header {
   height: 95vh;

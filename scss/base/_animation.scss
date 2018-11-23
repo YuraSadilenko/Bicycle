@@ -6,3 +6,20 @@
         transform:  rotate(360deg) scale(1.2);
     }
 }
+
+@keyframes translateGrid {
+    0% {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    100% {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+}
+
+.animation-rotate:hover {
+    animation: 1s infinite rotScale;
+    animation-timing-function: linear;
+}

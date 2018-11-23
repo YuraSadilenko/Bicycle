@@ -1,0 +1,136 @@
+
+.section-presentation {
+    &__one {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40rem 15rem;
+        grid-template-areas:    
+            "ione ione tb"
+            "ione ione bgone";
+    }
+    
+    &__two {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40rem 15rem;
+        grid-template-areas:    
+            "tb itwo itwo"
+            "bgtwo itwo itwo";
+    }
+    &__three {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 40rem 15rem;
+        grid-template-areas:    
+            "ithree tb ifour"
+            "ithree bgthree ifour";
+    }
+
+    &__img--1 {
+        background-image: url('../../images/bicycle_company.jpg');
+        background-size: cover;
+        grid-area: ione;
+    }
+
+    &__img--2 {
+        background-image: url('../../images/vintage.jpg');
+        background-size: cover;
+        grid-area: itwo;
+    }
+
+    &__img--3{
+        background-image: url('../../images/bicycles1.jpg');
+        background-size: cover;    
+        grid-area: ithree;
+    }
+
+    &__img--4 {
+        background-image: url('../../images/bicycles2.jpg');
+        background-size: cover;
+        grid-area: ifour;
+    }
+
+    &__text {
+        padding: 4rem 3rem;
+        text-align: center;
+        font-size: 1.7rem;
+        grid-area: tb;
+
+    }
+
+}
+
+.presentation__wrap {
+    position: relative;
+    transition: all 1s;
+
+    &--one {
+        &:hover {
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+        }
+    }
+
+    &--two {
+        &:hover {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+    }
+
+    &--three {
+        &:hover {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+        }
+    }
+
+    &:hover + ::after {
+        display: none;
+    }
+
+    
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #fff;
+        transform: translateY(50%) rotate(45deg);
+    }
+}
+
+
+
+.class-6 {
+    background-image: url('../../images/bg_one.jpg');
+    background-size: cover;
+    grid-area: bgone;
+
+}
+
+.class-7 {
+    background-image: url('../../images/bg__two.jpg');
+    background-size: cover;
+    grid-area: bgtwo;
+
+}
+
+.class-8 {
+    background-image: url('../../images/bg__three.jpg');
+    background-size: cover;
+    grid-area: bgthree;
+
+}
+
+
+
+
+

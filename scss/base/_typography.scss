@@ -1,8 +1,16 @@
 .heading__secondary {
     text-transform: uppercase;
     color: $title-color;
+    font-size: 2rem;
 }
 
-.section-presentation {
-    
+.paragraph {
+    color: $text-color;
+    line-height: 1.7;
+
+    &--justify {
+        color: $text-color;
+        line-height: 1.7;
+        text-align: justify;
+    }
 }
