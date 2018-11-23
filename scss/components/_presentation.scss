@@ -30,25 +30,25 @@
     }
 
     &__img--1 {
-        background-image: url('../../images/bicycle_company.jpg');
+        background-image: url('../images/bicycle_company.jpg');
         background-size: cover;
         grid-area: ione;
     }
 
     &__img--2 {
-        background-image: url('../../images/vintage.jpg');
+        background-image: url('../images/vintage.jpg');
         background-size: cover;
         grid-area: itwo;
     }
 
     &__img--3{
-        background-image: url('../../images/bicycles1.jpg');
+        background-image: url('../images/bicycles1.jpg');
         background-size: cover;    
         grid-area: ithree;
     }
 
     &__img--4 {
-        background-image: url('../../images/bicycles2.jpg');
+        background-image: url('../images/bicycles2.jpg');
         background-size: cover;
         grid-area: ifour;
     }
@@ -110,21 +110,21 @@
 
 
 .class-6 {
-    background-image: url('../../images/bg_one.jpg');
+    background-image: url('../images/bg_one.jpg');
     background-size: cover;
     grid-area: bgone;
 
 }
 
 .class-7 {
-    background-image: url('../../images/bg__two.jpg');
+    background-image: url('../images/bg__two.jpg');
     background-size: cover;
     grid-area: bgtwo;
 
 }
 
 .class-8 {
-    background-image: url('../../images/bg__three.jpg');
+    background-image: url('../images/bg__three.jpg');
     background-size: cover;
     grid-area: bgthree;
 
