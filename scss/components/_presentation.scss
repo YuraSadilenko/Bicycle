@@ -4,30 +4,50 @@
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 40rem 15rem;
+        grid-template-rows: 55rem;
         grid-template-areas:    
-            "ione ione tb"
-            "ione ione bgone";
+            "ione ione tb";
+    }
+
+    &__bg--one {
+        background-image: url('../images/bg_one.jpg');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: contain;
     }
     
     &__two {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 40rem 15rem;
+        grid-template-rows: 55rem;
         grid-template-areas:    
-            "tb itwo itwo"
-            "bgtwo itwo itwo";
+            "tb itwo itwo";
     }
+
+    &__bg--two {
+        background-image: url('../images/bg__two.jpg');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: contain;
+    }
+
     &__three {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 40rem 15rem;
+        grid-template-rows: 55rem;
         grid-template-areas:    
-            "ithree tb ifour"
-            "ithree bgthree ifour";
+            "ithree tb ifour";
     }
+
+    &__bg--three {
+        background-image: url('../images/bg__three.jpg');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: contain;
+    }
+
 
     &__img--1 {
         background-image: url('../images/bicycle_company.jpg');
@@ -53,85 +73,68 @@
         grid-area: ifour;
     }
 
-    &__text {
-        padding: 4rem 3rem;
+    &__wrap {
+        position: relative;
+        height: 40rem;
+        transition: all 1s;
+        background-color: #fff;
+
+    
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: #fff;
+            transform: translateY(50%) rotate(45deg);
+        }
+
+        &:hover {
+            height: 55rem;
+        }
+
+        &:hover::after {
+            transition: all 1s;
+            background-color: transparent;
+            box-shadow: -2px -2px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+
+
+    }
+    
+
+    &__box {
+        position: relative;
+        height: 40rem;
+        padding: 4rem 5rem;
         text-align: center;
         font-size: 1.7rem;
         grid-area: tb;
 
-    }
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 3rem;
+            left: 50%;
+            width: 6rem;
+            height: 1px;
+            transform: translate(-50%, 50%);
+            background-color: rgb(94, 94, 94);
+        }
 
-}
-
-.presentation__wrap {
-    position: relative;
-    transition: all 1s;
-    background-color: #fff;
-
-    &--one {
-        &:hover {
-            grid-column: 3 / 4;
-            grid-row: 1 / 3;
+        &:hover::after {
+            transition: all 1s;
+            background-color: transparent;
         }
     }
 
-    &--two {
-        &:hover {
-            grid-column: 1 / 2;
-            grid-row: 1 / 3;
-        }
-    }
-
-    &--three {
-        &:hover {
-            grid-column: 2 / 3;
-            grid-row: 1 / 3;
-        }
-    }
-
-    &:hover + ::after {
-        display: none;
-    }
-
-    
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        display: block;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-color: #fff;
-        transform: translateY(50%) rotate(45deg);
+    &__article {
+        height: 10rem;
+        text-overflow: hidden;
     }
 }
-
-
-
-.class-6 {
-    background-image: url('../images/bg_one.jpg');
-    background-size: cover;
-    grid-area: bgone;
-
-}
-
-.class-7 {
-    background-image: url('../images/bg__two.jpg');
-    background-size: cover;
-    grid-area: bgtwo;
-
-}
-
-.class-8 {
-    background-image: url('../images/bg__three.jpg');
-    background-size: cover;
-    grid-area: bgthree;
-
-}
-
-
-
-
 
