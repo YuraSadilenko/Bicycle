@@ -4,17 +4,20 @@
   100% {
     transform: rotate(360deg) scale(1.2); } }
 
-@keyframes translateGrid {
+@keyframes scale {
   0% {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2; }
+    transform: scale(1); }
   100% {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3; } }
+    transform: scale(1.3); } }
 
 .animation-rotate:hover {
   animation: 1s infinite rotScale;
   animation-timing-function: linear; }
+
+.animation-scale {
+  transition: all .5s; }
+  .animation-scale:hover {
+    transform: scale(1.3); }
 
 *,
 *::after,
@@ -32,6 +35,11 @@ html {
   color: #353738;
   font-size: 2rem; }
 
+.heading__tertiary {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 600; }
+
 .paragraph {
   color: #8c8e90;
   line-height: 1.7; }
@@ -39,6 +47,12 @@ html {
     color: #8c8e90;
     line-height: 1.7;
     text-align: justify; }
+
+.span--gray {
+  text-transform: lowercase;
+  margin-left: 2rem;
+  color: gray;
+  font-weight: 300; }
 
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
@@ -194,3 +208,48 @@ html {
   align-items: center;
   background-color: #f7f7f7;
   padding: 13rem 10rem; }
+
+.section-comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 13rem 10rem; }
+
+.section-service {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 26rem 26rem;
+  grid-template-areas: "bone bthree bfour bfive bseven bseven" "btwo btwo bfour bfive bsix beight"; }
+  .section-service__block-one {
+    background-image: url("../../images/section-service/foto_1.jpg");
+    grid-area: bone; }
+  .section-service__block-two {
+    background-image: url("../../images/section-service/foto_2.jpg");
+    grid-area: btwo; }
+  .section-service__block-three {
+    background-image: url("../../images/section-service/foto_3.jpg");
+    grid-area: bthree; }
+  .section-service__block-four {
+    background-image: url("../../images/section-service/foto_4.jpg");
+    grid-area: bfour; }
+  .section-service__block-five {
+    background-image: url("../../images/section-service/foto_5.jpg");
+    grid-area: bfive; }
+  .section-service__block-six {
+    background-image: url("../../images/section-service/foto_6.jpg");
+    grid-area: bsix; }
+  .section-service__block-seven {
+    background-image: url("../../images/section-service/foto_7.jpg");
+    grid-area: bseven; }
+  .section-service__block-eight {
+    background-image: url("../../images/section-service/foto_8.jpg");
+    grid-area: beight; }
+  .section-service--hover {
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 194, 158, 0);
+    transition: all .3s; }
+    .section-service--hover:hover {
+      background: rgba(100, 194, 158, 0.6); }

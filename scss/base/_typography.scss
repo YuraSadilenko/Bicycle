@@ -4,6 +4,12 @@
     font-size: 2rem;
 }
 
+.heading__tertiary {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 .paragraph {
     color: $text-color;
     line-height: 1.7;
@@ -13,4 +19,11 @@
         line-height: 1.7;
         text-align: justify;
     }
+}
+
+.span--gray {
+    text-transform: lowercase;
+    margin-left: 2rem;
+    color: gray;
+    font-weight: 300;
 }

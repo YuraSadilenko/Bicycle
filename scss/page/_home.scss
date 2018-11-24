@@ -5,3 +5,74 @@
     background-color: #f7f7f7;
     padding: 13rem 10rem;
 }
+
+.section-comments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 13rem 10rem;
+}
+
+.section-service {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 26rem 26rem;
+    grid-template-areas:    
+        "bone bthree bfour bfive bseven bseven"
+        "btwo btwo bfour bfive bsix beight";
+
+    &__block-one{
+        background-image: url('../../images/section-service/foto_1.jpg');
+        grid-area: bone;
+    }
+
+    &__block-two{
+        background-image: url('../../images/section-service/foto_2.jpg');
+        grid-area: btwo;
+    }
+
+    &__block-three{
+        background-image: url('../../images/section-service/foto_3.jpg');
+        grid-area: bthree;
+    }
+
+    &__block-four{
+        background-image: url('../../images/section-service/foto_4.jpg');
+        grid-area: bfour;
+    }
+
+    &__block-five{
+        background-image: url('../../images/section-service/foto_5.jpg');
+        grid-area: bfive;
+    }
+
+    &__block-six{
+        background-image: url('../../images/section-service/foto_6.jpg');
+        grid-area: bsix;
+
+    }
+    &__block-seven{
+        background-image: url('../../images/section-service/foto_7.jpg');
+        grid-area: bseven;
+    }
+
+    &__block-eight{
+        background-image: url('../../images/section-service/foto_8.jpg');
+        grid-area: beight;
+    }
+
+    &--hover {
+        width: 100%;
+        height: 100%;
+        background: rgba($primary-color, 0);
+        transition: all .3s;
+        
+        &:hover {
+            background: rgba($primary-color, 0.6);
+             
+
+        }
+    }
+}
