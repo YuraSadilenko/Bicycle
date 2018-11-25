@@ -48,31 +48,52 @@
         background-size: contain;
     }
 
+    &__img {
+        position: relative;
+        overflow: hidden;
 
-    &__img--1 {
-        background-image: url('../images/bicycle_company.jpg');
-        background-size: cover;
-        grid-area: ione;
+        &--1 {
+            background-image: url('../images/bicycle_company.jpg');
+            background-size: cover;
+            grid-area: ione;
+
+        }
+
+    
+        &--2 {
+            background-image: url('../images/vintage.jpg');
+            background-size: cover;
+            grid-area: itwo;
+        }
+    
+        &--3{
+            background-image: url('../images/bicycles1.jpg');
+            background-size: cover;    
+            grid-area: ithree;
+        }
+    
+        &--4 {
+            background-image: url('../images/bicycles2.jpg');
+            background-size: cover;
+            grid-area: ifour;
+        }
+        
+        &-wrap {
+            @include positionCenter;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background: rgba(0, 0, 0, .2);
+            transition: all .4s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+    
     }
-
-    &__img--2 {
-        background-image: url('../images/vintage.jpg');
-        background-size: cover;
-        grid-area: itwo;
-    }
-
-    &__img--3{
-        background-image: url('../images/bicycles1.jpg');
-        background-size: cover;    
-        grid-area: ithree;
-    }
-
-    &__img--4 {
-        background-image: url('../images/bicycles2.jpg');
-        background-size: cover;
-        grid-area: ifour;
-    }
-
+    
     &__wrap {
         position: relative;
         height: 40rem;

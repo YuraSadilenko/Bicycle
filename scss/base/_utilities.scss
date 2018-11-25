@@ -13,3 +13,7 @@
 .u-text-center {
     text-align: center;
 }
+
+.centered {
+    @include positionCenter
+}
