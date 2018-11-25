@@ -1,17 +1,11 @@
 .section-story {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include sectionsForm;
     background-color: #f7f7f7;
-    padding: 13rem 10rem;
 }
 
 .section-comments {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include sectionsForm;
     background-color: #f7f7f7;
-    padding: 13rem 10rem;
 }
 
 .section-service {
@@ -22,7 +16,6 @@
     grid-template-areas:    
         "bone bthree bfour bfive bseven bseven"
         "btwo btwo bfour bfive bsix beight";
-
 
     &__block {
         position: relative;
@@ -81,6 +74,16 @@
                 opacity: 1;
             }
         }
-        
+
     }
+}
+
+.section-buttons {    
+    @include sectionsForm;
+    justify-content: space-between;
+    background-color: $color-sect-btn;
+}
+
+.section-mail {
+    @include sectionsForm;
 }

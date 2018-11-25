@@ -54,6 +54,11 @@ html {
   color: gray;
   font-weight: 300; }
 
+.mail--italic {
+  display: block;
+  font-size: 2rem;
+  text-transform: capitalize; }
+
 .u-margin-bottom-small {
   margin-bottom: 3rem; }
 
@@ -71,6 +76,77 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.btn {
+  display: block;
+  padding: 1.5rem 10rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: .5s;
+  border-radius: 2px; }
+  .btn--green {
+    color: #64c29e;
+    border: 1px solid #64c29e; }
+    .btn--green:first-child:hover {
+      transform: translate(-8px, -8px) scale(1.1);
+      color: #fff;
+      border: 1px solid #fff;
+      background-color: #64c29e; }
+    .btn--green:first-child:active {
+      transform: translate(-2px, -2px); }
+    .btn--green:last-child:hover {
+      transform: translate(8px, -8px) scale(1.1);
+      color: #fff;
+      border: 1px solid #fff;
+      background-color: #64c29e; }
+    .btn--green:last-child:active {
+      transform: translate(2px, -2px); }
+  .btn--white {
+    color: #fff;
+    border: 1px solid #fff; }
+    .btn--white:hover {
+      transform: translateY(-8px) scale(1.1);
+      color: #64c29e;
+      border: 1px solid #64c29e;
+      background-color: #fff; }
+    .btn--white:active {
+      transform: translateY(-2px); }
+
+.mail-box {
+  text-align: center; }
+  .mail-box__form {
+    display: flex;
+    width: 100%; }
+    .mail-box__form--input {
+      width: 34rem;
+      outline: none;
+      font-size: 1.6rem;
+      padding: 2rem 4rem 2rem 2rem;
+      color: #8c8e90;
+      font-style: italic; }
+
+.navigation {
+  font-size: 1.7rem;
+  text-transform: uppercase; }
+  .navigation__list {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navigation__item {
+    list-style: none;
+    margin: 0 3rem;
+    transition: .3s; }
+    .navigation__item:hover {
+      transform: scale(1.1); }
+  .navigation__link {
+    text-decoration: none;
+    color: #4d4959; }
+
+.nav-logo {
+  transition: 1s; }
+  .nav-logo:hover {
+    transform: translateY(5rem) scale(1.6) rotate(360deg); }
 
 .section-presentation__one {
   display: grid;
@@ -203,36 +279,19 @@ html {
   background-position: top;
   padding: 2rem 0; }
 
-.navigation {
-  font-size: 1.7rem;
-  text-transform: uppercase; }
-  .navigation__list {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .navigation__item {
-    list-style: none;
-    margin: 0 3rem;
-    transition: .3s; }
-    .navigation__item:hover {
-      transform: scale(1.1); }
-  .navigation__link {
-    text-decoration: none;
-    color: #4d4959; }
-
 .section-story {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
-  padding: 13rem 10rem; }
+  padding: 13rem 10rem;
+  background-color: #f7f7f7; }
 
 .section-comments {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
-  padding: 13rem 10rem; }
+  padding: 13rem 10rem;
+  background-color: #f7f7f7; }
 
 .section-service {
   display: grid;
@@ -278,3 +337,17 @@ html {
       transition: all .4s; }
       .section-service__block--wrap:hover {
         opacity: 1; }
+
+.section-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13rem 10rem;
+  justify-content: space-between;
+  background-color: #282f35; }
+
+.section-mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13rem 10rem; }
