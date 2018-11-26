@@ -126,11 +126,11 @@ html {
       margin-bottom: 5rem;
       width: 60%;
       text-align: center; } }
-  @media (max-width: 75.8em) {
+  @media (max-width: 40.5em) {
     .btn {
-      padding: 2.5rem 10rem;
+      padding: 2.5rem 3rem;
       font-size: 2.5rem;
-      width: 85%; } }
+      width: 95%; } }
   .btn--green {
     color: #64c29e;
     border: 1px solid #64c29e; }
@@ -245,7 +245,7 @@ html {
         border-bottom: 3px solid #ff5c2b; }
       @media (max-width: 40.5em) {
         .mail-box__form--input {
-          width: 85%;
+          width: 95%;
           margin-bottom: 3rem; } }
   .mail-box__btn {
     width: 12rem;
@@ -267,7 +267,7 @@ html {
       box-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.4); }
     @media (max-width: 40.5em) {
       .mail-box__btn {
-        width: 85%;
+        width: 95%;
         margin: 0; } }
 
 .navigation {
@@ -533,7 +533,8 @@ html {
   text-align: center; }
   @media (max-width: 60em) {
     .logo-box {
-      display: block; } }
+      display: block;
+      margin-bottom: 5rem; } }
 
 .section-story {
   display: flex;
