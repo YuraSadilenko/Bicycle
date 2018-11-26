@@ -7,7 +7,11 @@
     transition: .5s;
     border-radius: 2px;
 
-
+    @include respond(tab-land) {
+        margin-bottom: 5rem;
+        width: 60%;
+        text-align: center;
+    }
 
     &--green {
         color: $primary-color;
@@ -37,8 +41,6 @@
             &:active {
                 transform: translate(2px, -2px);
             }
-            
-
         }
     }
 

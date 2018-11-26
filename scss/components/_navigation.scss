@@ -1,13 +1,17 @@
 .navigation {
-
     font-size: 1.7rem;
     text-transform: uppercase;
-
 
     &__list {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include respond(tab-port) {
+            & {
+                flex-direction: column;
+            }
+        }
     }
 
     &__item {    
@@ -16,21 +20,42 @@
         transition: .3s;
 
         &:hover {
+            font-weight: 400;
             transform: scale(1.1);
+        }
+
+        @include respond(tab-port) {
+            &:nth-child(even) {
+                display: none;
+            }
+
+            &:nth-child(odd) {
+                margin:2rem 0 2rem;
+                font-size: 3rem;
+                font-weight: 500;
+                background-color: rgba($bg-section-color, 0.3);
+                
+            }
         }
     }
 
     &__link {
         text-decoration: none;
         color: $nav-color;
-    }
 
+        @include respond(tab-port) {
+        }
+    }
 }
 
 .nav-logo {
-    transition: 1s;
+    transition: .6s;
     
     &:hover {
         transform: translateY(5rem) scale(1.6) rotate(360deg);
+
+        @include respond(tab-port) {
+            transform: translateY(0) scale(1.2) rotate(0deg);
+        }
     }
 }

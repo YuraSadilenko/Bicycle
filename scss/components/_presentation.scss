@@ -7,6 +7,14 @@
         grid-template-rows: 55rem;
         grid-template-areas:    
             "ione ione tb";
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 55rem;
+            grid-template-areas:    
+                "ione tb";
+    
+        }
     }
 
     &__bg--one {
@@ -23,6 +31,13 @@
         grid-template-rows: 55rem;
         grid-template-areas:    
             "tb itwo itwo";
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 55rem;
+            grid-template-areas:    
+                "tb itwo";
+        }
     }
 
     &__bg--two {
@@ -39,6 +54,14 @@
         grid-template-rows: 55rem;
         grid-template-areas:    
             "ithree tb ifour";
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 55rem;
+            grid-template-areas:    
+                "ithree tb";
+    
+        }            
     }
 
     &__bg--three {

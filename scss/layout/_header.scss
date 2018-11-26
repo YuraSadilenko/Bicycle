@@ -6,4 +6,13 @@
    padding:  2rem 0;
 }
 
+.logo-box {
+    display: none;
+    text-align: center;
+
+    @include respond(tab-port) {
+        display: block;
+    }
+}
+
 
