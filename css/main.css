@@ -53,10 +53,10 @@
 html {
   font-size: 62.5%;
   font-family: 'Lato', Arial, Helvetica, sans-serif; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     html {
       font-size: 56.25%; } }
-  @media (max-width: 60em) {
+  @media (max-width: 65rem) {
     html {
       font-size: 50%; } }
   @media (min-width: 112.5em) {
@@ -121,7 +121,7 @@ html {
   font-size: 2rem;
   transition: .5s;
   border-radius: 2px; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .btn {
       margin-bottom: 5rem;
       width: 60%;
@@ -175,7 +175,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .carousel__labels {
       bottom: 5rem; } }
   .carousel__labels-item::after {
@@ -187,7 +187,7 @@ html {
     border: 1px solid gray;
     border-radius: 50%;
     cursor: pointer; }
-    @media (max-width: 75em) {
+    @media (max-width: 76.8rem) {
       .carousel__labels-item::after {
         width: 1.3rem;
         height: 1.3rem; } }
@@ -234,7 +234,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center; }
-    @media (max-width: 60em) {
+    @media (max-width: 65rem) {
       .navigation__list {
         flex-direction: column; } }
   .navigation__item {
@@ -244,7 +244,7 @@ html {
     .navigation__item:hover {
       font-weight: 400;
       transform: scale(1.1); }
-    @media (max-width: 60em) {
+    @media (max-width: 65rem) {
       .navigation__item:nth-child(even) {
         display: none; }
       .navigation__item:nth-child(odd) {
@@ -260,7 +260,7 @@ html {
   transition: .6s; }
   .nav-logo:hover {
     transform: translateY(5rem) scale(1.6) rotate(360deg); }
-    @media (max-width: 60em) {
+    @media (max-width: 65rem) {
       .nav-logo:hover {
         transform: translateY(0) scale(1.2) rotate(0deg); } }
 
@@ -270,7 +270,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 55rem;
   grid-template-areas: "ione ione tb"; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-presentation__one {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 55rem;
@@ -288,7 +288,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 55rem;
   grid-template-areas: "tb itwo itwo"; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-presentation__two {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 55rem;
@@ -306,7 +306,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 55rem;
   grid-template-areas: "ithree tb ifour"; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-presentation__three {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 55rem;
@@ -417,7 +417,7 @@ html {
   padding: 13rem 10rem;
   justify-items: center;
   font-size: 2rem; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .footer {
       padding: 13rem 0; } }
   .footer-madeby {
@@ -455,7 +455,7 @@ html {
 .logo-box {
   display: none;
   text-align: center; }
-  @media (max-width: 60em) {
+  @media (max-width: 65rem) {
     .logo-box {
       display: block; } }
 
@@ -465,7 +465,7 @@ html {
   align-items: center;
   padding: 13rem 10rem;
   background-color: #f7f7f7; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-story {
       padding: 15rem 0; } }
 
@@ -478,7 +478,7 @@ html {
   width: 100%;
   text-align: center;
   background-color: #f7f7f7; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-comments {
       padding: 15rem 0; } }
 
@@ -488,7 +488,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 26rem 26rem;
   grid-template-areas: "bone bthree bfour bfive bseven bseven" "btwo btwo bfour bfive bsix beight"; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-service {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 26rem 26rem 26rem 26rem;
@@ -496,35 +496,35 @@ html {
   .section-service__block {
     position: relative; }
     .section-service__block--one {
-      background-image: url("../../images/section-service/foto_1.jpg");
+      background-image: url("../images/section-service/foto_1.jpg");
       background-size: cover;
       grid-area: bone; }
     .section-service__block--two {
-      background-image: url("../../images/section-service/foto_2.jpg");
+      background-image: url("../images/section-service/foto_2.jpg");
       background-size: cover;
       grid-area: btwo; }
     .section-service__block--three {
-      background-image: url("../../images/section-service/foto_3.jpg");
+      background-image: url("../images/section-service/foto_3.jpg");
       background-size: cover;
       grid-area: bthree; }
     .section-service__block--four {
-      background-image: url("../../images/section-service/foto_4.jpg");
+      background-image: url("../images/section-service/foto_4.jpg");
       background-size: cover;
       grid-area: bfour; }
     .section-service__block--five {
-      background-image: url("../../images/section-service/foto_5.jpg");
+      background-image: url("../images/section-service/foto_5.jpg");
       background-size: cover;
       grid-area: bfive; }
     .section-service__block--six {
-      background-image: url("../../images/section-service/foto_6.jpg");
+      background-image: url("../images/section-service/foto_6.jpg");
       background-size: cover;
       grid-area: bsix; }
     .section-service__block--seven {
-      background-image: url("../../images/section-service/foto_7.jpg");
+      background-image: url("../images/section-service/foto_7.jpg");
       background-size: cover;
       grid-area: bseven; }
     .section-service__block--eight {
-      background-image: url("../../images/section-service/foto_8.jpg");
+      background-image: url("../images/section-service/foto_8.jpg");
       background-size: cover;
       grid-area: beight; }
     .section-service__block--wrap {
@@ -547,10 +547,10 @@ html {
   padding: 13rem 10rem;
   justify-content: space-between;
   background-color: #282f35; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-buttons {
       padding: 15rem 0; } }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-buttons {
       flex-direction: column; } }
 
@@ -559,6 +559,6 @@ html {
   justify-content: center;
   align-items: center;
   padding: 13rem 10rem; }
-  @media (max-width: 75em) {
+  @media (max-width: 76.8rem) {
     .section-mail {
       padding: 15rem 0; } }
