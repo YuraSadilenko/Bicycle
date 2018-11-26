@@ -291,7 +291,9 @@ html {
       .navigation__item:nth-child(even) {
         display: none; }
       .navigation__item:nth-child(odd) {
+        width: 100%;
         margin: 2rem 0 2rem;
+        text-align: center;
         font-size: 3rem;
         font-weight: 500;
         background-color: rgba(247, 247, 247, 0.3); } }

@@ -30,7 +30,9 @@
             }
 
             &:nth-child(odd) {
+                width: 100%;
                 margin:2rem 0 2rem;
+                text-align: center;
                 font-size: 3rem;
                 font-weight: 500;
                 background-color: rgba($bg-section-color, 0.3);
@@ -42,9 +44,6 @@
     &__link {
         text-decoration: none;
         color: $nav-color;
-
-        @include respond(tab-port) {
-        }
     }
 }
 
