@@ -16,7 +16,7 @@ gulp.task('watch', function () {
 gulp.task('autoprefix', function() {
     return gulp.src("css/main.css")
     .pipe(autoprefixer({
-        browsers: ['last 5 version'],
+        browsers: ['last 20 version'],
         cascade: true
     }))
 });

@@ -28,6 +28,7 @@
         background-repeat: no-repeat;
         background-position-y: bottom;
         background-size: contain;
+
     }
     
     &__two {
@@ -197,7 +198,6 @@
 
     &__article {
         height: 10rem;
-        text-overflow: hidden;
     }
 }
 

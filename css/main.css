@@ -460,8 +460,7 @@ html {
     background-color: transparent; }
 
 .section-presentation__article {
-  height: 10rem;
-  text-overflow: hidden; }
+  height: 10rem; }
 
 .story-box {
   width: 100%;
