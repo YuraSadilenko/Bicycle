@@ -53,7 +53,7 @@
 html {
   font-size: 62.5%;
   font-family: 'Lato', Arial, Helvetica, sans-serif; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     html {
       font-size: 56.25%; } }
   @media (max-width: 60em) {
@@ -121,7 +121,7 @@ html {
   font-size: 2rem;
   transition: .5s;
   border-radius: 2px; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .btn {
       margin-bottom: 5rem;
       width: 60%;
@@ -204,7 +204,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   text-align: center; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .carousel__labels {
       bottom: 5rem; } }
   @media (max-width: 40.5em) {
@@ -219,7 +219,7 @@ html {
     border: 1px solid gray;
     border-radius: 50%;
     cursor: pointer; }
-    @media (max-width: 75.8em) {
+    @media (max-width: 74.8em) {
       .carousel__labels-item::after {
         width: 1.3rem;
         height: 1.3rem; } }
@@ -315,7 +315,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 55rem;
   grid-template-areas: "ione ione tb"; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-presentation__one {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 55rem;
@@ -338,7 +338,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 55rem;
   grid-template-areas: "tb itwo itwo"; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-presentation__two {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 55rem;
@@ -361,7 +361,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 55rem;
   grid-template-areas: "ithree tb ifour"; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-presentation__three {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 55rem;
@@ -482,7 +482,7 @@ html {
   padding: 13rem 10rem;
   justify-items: center;
   font-size: 2rem; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .footer {
       padding: 13rem 0; } }
   @media (max-width: 60em) {
@@ -545,7 +545,7 @@ html {
   align-items: center;
   padding: 13rem 10rem;
   background-color: #f7f7f7; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-story {
       padding: 15rem 3rem; } }
   @media (max-width: 40.5em) {
@@ -561,7 +561,7 @@ html {
   width: 100%;
   text-align: center;
   background-color: #f7f7f7; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-comments {
       padding: 15rem 3rem; } }
   @media (max-width: 40.5em) {
@@ -633,13 +633,13 @@ html {
   padding: 13rem 10rem;
   justify-content: space-between;
   background-color: #282f35; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-buttons {
       padding: 15rem 3rem; } }
   @media (max-width: 40.5em) {
     .section-buttons {
       padding: 15rem 2rem; } }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-buttons {
       flex-direction: column; } }
 
@@ -648,7 +648,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 13rem 10rem; }
-  @media (max-width: 75.8em) {
+  @media (max-width: 74.8em) {
     .section-mail {
       padding: 15rem 3rem; } }
   @media (max-width: 40.5em) {
