@@ -527,6 +527,10 @@ html {
   background-size: cover;
   background-position: top;
   padding: 2rem 0; }
+  @media (max-width: 60em) {
+    .header {
+      height: auto;
+      padding: 4rem 0; } }
 
 .logo-box {
   display: none;
