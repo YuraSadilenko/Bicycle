@@ -20,9 +20,7 @@ html {
     }
     
     @include respond(huge-desktop) {
-        font-size: 75%; //1rem = 12px, 12/16=0.75 
+        font-size: 95%; //1rem = 12px, 12/16=0.75 
     }
 }
 
-body {
-}

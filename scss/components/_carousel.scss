@@ -42,6 +42,11 @@
     @include respond(tab-land) {
         bottom: 5rem;
     }
+
+    @include respond(phone) {
+        bottom: 7rem;
+    }
+
     
 
     &-item::after{

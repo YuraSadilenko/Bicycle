@@ -13,8 +13,16 @@
             grid-template-rows: 55rem;
             grid-template-areas:    
                 "ione tb";
-    
         }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 55rem;
+            grid-template-areas:    
+                "tb";
+        }
+
+
     }
 
     &__bg--one {
@@ -38,6 +46,13 @@
             grid-template-areas:    
                 "tb itwo";
         }
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 55rem;
+            grid-template-areas:    
+                "tb";
+        }
     }
 
     &__bg--two {
@@ -60,8 +75,14 @@
             grid-template-rows: 55rem;
             grid-template-areas:    
                 "ithree tb";
-    
-        }            
+        }  
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 55rem;
+            grid-template-areas:    
+                "tb";
+        }          
     }
 
     &__bg--three {
@@ -133,6 +154,10 @@
 
         &:hover {
             height: 55rem;
+
+            @include respond(phone) {
+                height: 50rem;
+            }
         }
 
         &:hover::after {
@@ -160,6 +185,10 @@
             height: 1px;
             transform: translate(-50%, 50%);
             background-color: rgb(94, 94, 94);
+
+            @include respond(phone) {
+                display: none;
+            }
         }
 
         &:hover::after {

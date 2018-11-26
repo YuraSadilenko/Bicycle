@@ -12,6 +12,17 @@
 
     @include respond(tab-land) {
         padding: 13rem 0;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10rem 10rem 10rem;
+        grid-gap: 3rem; 
+        grid-template-areas: 
+        "location"
+        "madeby"
+        "icons";
+        padding: 8rem 0;
 
     }
 
@@ -23,6 +34,11 @@
         font-style: italic;
         color: $text-color-light;
         grid-area: location;
+
+        @include respond(tab-port) {
+            text-align: center;
+        }
+    
 
         &--header {
             font-size: 2rem;
