@@ -1,67 +1,67 @@
 @keyframes rotScale {
-    0% {
-        transform: rotate(0deg) scale(1.2);
-    }
-    100% {
-        transform:  rotate(360deg) scale(1.2);
-    }
+  0% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.2);
+  }
 }
 
 @keyframes scale {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    100% {
-        transform: scale(1.3);
-    }
+  100% {
+    transform: scale(1.3);
+  }
 }
 
 @keyframes dingle {
-    0% {
-        transform: rotate(10deg) translateY(-5px) scale(1.1);
-    }
-    10% {
-        transform: rotate(-10deg) translateY(-5px) scale(1.1);
-    }
-    20% {
-        transform: rotate(10deg) translateY(-5px) scale(1.1);
-    }
-    30% {
-        transform: rotate(-10deg) translateY(-5px) scale(1.1);
-    }
-    40% {
-        transform: rotate(10deg) translateY(-5px) scale(1.1);
-    }
-    50% {
-        transform: rotate(-10deg) translateY(-5px) scale(1.1);
-    }
-    60% {
-        transform: rotate(10deg) translateY(-5px) scale(1.1);
-    }
-    70% {
-        transform: rotate(-10deg) translateY(-5px) scale(1.1);
-    }
-    80% {
-        transform: rotate(10deg) translateY(-5px) scale(1.1);
-    }
-    90% {
-        transform: rotate(-10deg) translateY(-5px) scale(1.1);
-    }
-    100% {
-        transform: rotate(10deg) translateY(-5px) scale(1.1);
-    }
+  0% {
+    transform: rotate(10deg) translateY(-5px) scale(1.1);
+  }
+  10% {
+    transform: rotate(-10deg) translateY(-5px) scale(1.1);
+  }
+  20% {
+    transform: rotate(10deg) translateY(-5px) scale(1.1);
+  }
+  30% {
+    transform: rotate(-10deg) translateY(-5px) scale(1.1);
+  }
+  40% {
+    transform: rotate(10deg) translateY(-5px) scale(1.1);
+  }
+  50% {
+    transform: rotate(-10deg) translateY(-5px) scale(1.1);
+  }
+  60% {
+    transform: rotate(10deg) translateY(-5px) scale(1.1);
+  }
+  70% {
+    transform: rotate(-10deg) translateY(-5px) scale(1.1);
+  }
+  80% {
+    transform: rotate(10deg) translateY(-5px) scale(1.1);
+  }
+  90% {
+    transform: rotate(-10deg) translateY(-5px) scale(1.1);
+  }
+  100% {
+    transform: rotate(10deg) translateY(-5px) scale(1.1);
+  }
 }
 
 .animation-rotate:hover {
-    animation: 1s infinite rotScale;
-    animation-timing-function: linear;
+  animation: 1s infinite rotScale;
+  animation-timing-function: linear;
 }
 
 .animation-scale {
-    transition: all .5s;
+  transition: all 0.5s;
 
-    &:hover {
-        transform: scale(1.3);
-    }
+  &:hover {
+    transform: scale(1.3);
+  }
 }

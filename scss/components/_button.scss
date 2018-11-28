@@ -1,108 +1,105 @@
 .btn {
-    display: block;
-    padding: 1.5rem 10rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2rem;
-    transition: .5s;
-    border-radius: 2px;
+  display: block;
+  padding: 1.5rem 10rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  transition: 0.5s;
+  border-radius: 2px;
 
-    @include respond(tab-land) {
-        margin-bottom: 5rem;
-        width: 60%;
-        text-align: center;
-    }
+  @include respond(tab-land) {
+    margin-bottom: 5rem;
+    width: 60%;
+    text-align: center;
+  }
 
-    @include respond(phone) {
-        padding: 2.5rem 3rem;
-        font-size: 2.5rem;
-        width: 95%;
-    }
+  @include respond(phone) {
+    padding: 2.5rem 3rem;
+    font-size: 2.5rem;
+    width: 95%;
+  }
 
+  &--green {
+    color: $primary-color;
+    border: 1px solid $primary-color;
 
-    &--green {
-        color: $primary-color;
-        border: 1px solid $primary-color;
-
-        &:first-child{
-            &:hover {
-                transform: translate(-8px, -8px) scale(1.1);
-                color: #fff;
-                border: 1px solid #fff;
-                background-color: $primary-color;
-            }
-            
-            &:active {
-                transform: translate(-2px, -2px);
-            }
-
-            @include respond(tab-port) {
-                &:hover {
-                    transform: translate(0px, 0px) scale(1.1);
-                    color: #fff;
-                    border: 1px solid #fff;
-                    background-color: $primary-color;
-                }
-                
-                &:active {
-                    transform: translate(0px, 0px);
-                }
-            }
-        }
-
-        &:last-child {
-            &:hover {
-                transform: translate(8px, -8px) scale(1.1);
-                color: #fff;
-                border: 1px solid #fff;
-                background-color: $primary-color;
-
-            }
-            &:active {
-                transform: translate(2px, -2px);
-            }
-
-            @include respond(tab-port) {
-                &:hover {
-                    transform: translate(0px, 0px) scale(1.1);
-                    color: #fff;
-                    border: 1px solid #fff;
-                    background-color: $primary-color;
-                }
-                
-                &:active {
-                    transform: translate(0px, 0px);
-                }
-            }
-        }
-    }
-
-    &--white {
+    &:first-child {
+      &:hover {
+        transform: translate(-8px, -8px) scale(1.1);
         color: #fff;
         border: 1px solid #fff;
+        background-color: $primary-color;
+      }
 
+      &:active {
+        transform: translate(-2px, -2px);
+      }
+
+      @include respond(tab-port) {
         &:hover {
-            transform: translateY(-8px) scale(1.1);
-            color: $primary-color;
-            border: 1px solid $primary-color;
-            background-color: #fff;
-
+          transform: translate(0px, 0px) scale(1.1);
+          color: #fff;
+          border: 1px solid #fff;
+          background-color: $primary-color;
         }
+
         &:active {
-            transform: translateY(-2px);
+          transform: translate(0px, 0px);
+        }
+      }
+    }
+
+    &:last-child {
+      &:hover {
+        transform: translate(8px, -8px) scale(1.1);
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: $primary-color;
+      }
+      &:active {
+        transform: translate(2px, -2px);
+      }
+
+      @include respond(tab-port) {
+        &:hover {
+          transform: translate(0px, 0px) scale(1.1);
+          color: #fff;
+          border: 1px solid #fff;
+          background-color: $primary-color;
         }
 
-        @include respond(tab-port) {
-            &:hover {
-                transform: translate(0px, 0px) scale(1.1);
-                color: $primary-color;
-                border: 1px solid $primary-color;
-                background-color: #fff;
-            }
-            
-            &:active {
-                transform: translate(0px, 0px);
-            }
+        &:active {
+          transform: translate(0px, 0px);
         }
+      }
     }
+  }
+
+  &--white {
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      transform: translateY(-8px) scale(1.1);
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      background-color: #fff;
+    }
+    &:active {
+      transform: translateY(-2px);
+    }
+
+    @include respond(tab-port) {
+      &:hover {
+        transform: translate(0px, 0px) scale(1.1);
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        background-color: #fff;
+      }
+
+      &:active {
+        transform: translate(0px, 0px);
+      }
+    }
+  }
 }

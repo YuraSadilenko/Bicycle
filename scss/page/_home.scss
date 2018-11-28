@@ -1,122 +1,118 @@
 .section-story {
-    @include sectionsForm;
-    background-color: $bg-section-color;
+  @include sectionsForm;
+  background-color: $bg-section-color;
 
-    @include respond(phone) {
-    }
+  @include respond(phone) {
+  }
 }
 
 .section-comments {
-    position: relative;
-    @include sectionsForm;
-    width: 100%;
-    text-align: center;
-    background-color: $bg-section-color;
+  position: relative;
+  @include sectionsForm;
+  width: 100%;
+  text-align: center;
+  background-color: $bg-section-color;
 }
 
 .section-service {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 26rem 26rem;
-    grid-template-areas:    
-        "bone bthree bfour bfive bseven bseven"
-        "btwo btwo bfour bfive bsix beight";
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 26rem 26rem;
+  grid-template-areas:
+    "bone bthree bfour bfive bseven bseven"
+    "btwo btwo bfour bfive bsix beight";
 
-        @include respond(tab-port) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 26rem 26rem 26rem 26rem;
-            grid-template-areas:    
-                "bone bthree"
-                "btwo  bfour"
-                "bfive bseven"
-                "bsix beight";
-        }
+  @include respond(tab-port) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 26rem 26rem 26rem 26rem;
+    grid-template-areas:
+      "bone bthree"
+      "btwo  bfour"
+      "bfive bseven"
+      "bsix beight";
+  }
 
-    &__block {
-        position: relative;
+  &__block {
+    position: relative;
 
-        &--one{
-            background-image: url('../images/section-service/foto_1.jpg');
-            background-size: cover;
-            grid-area: bone;
-        }
-
-        &--two{
-            background-image: url('../images/section-service/foto_2.jpg');
-            background-size: cover;
-            grid-area: btwo;
-        }
-
-        &--three{
-            background-image: url('../images/section-service/foto_3.jpg');
-            background-size: cover;
-            grid-area: bthree;
-        }
-
-        &--four{
-            background-image: url('../images/section-service/foto_4.jpg');
-            background-size: cover;
-            grid-area: bfour;
-        }
-
-        &--five{
-            background-image: url('../images/section-service/foto_5.jpg');
-            background-size: cover;
-            grid-area: bfive;
-        }
-
-        &--six{
-            background-image: url('../images/section-service/foto_6.jpg');
-            background-size: cover;
-            grid-area: bsix;
-        }
-
-        &--seven{
-            background-image: url('../images/section-service/foto_7.jpg');
-            background-size: cover;
-            grid-area: bseven;
-        }
-
-        &--eight{
-            background-image: url('../images/section-service/foto_8.jpg');
-            background-size: cover;
-            grid-area: beight;
-        }
-
-        &--wrap {
-            @include positionCenter;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            background-color: rgba($primary-color, .7);
-            transition: all .4s;
-    
-            &:hover {
-                opacity: 1;
-            }
-        }
+    &--one {
+      background-image: url("../images/section-service/foto_1.jpg");
+      background-size: cover;
+      grid-area: bone;
     }
+
+    &--two {
+      background-image: url("../images/section-service/foto_2.jpg");
+      background-size: cover;
+      grid-area: btwo;
+    }
+
+    &--three {
+      background-image: url("../images/section-service/foto_3.jpg");
+      background-size: cover;
+      grid-area: bthree;
+    }
+
+    &--four {
+      background-image: url("../images/section-service/foto_4.jpg");
+      background-size: cover;
+      grid-area: bfour;
+    }
+
+    &--five {
+      background-image: url("../images/section-service/foto_5.jpg");
+      background-size: cover;
+      grid-area: bfive;
+    }
+
+    &--six {
+      background-image: url("../images/section-service/foto_6.jpg");
+      background-size: cover;
+      grid-area: bsix;
+    }
+
+    &--seven {
+      background-image: url("../images/section-service/foto_7.jpg");
+      background-size: cover;
+      grid-area: bseven;
+    }
+
+    &--eight {
+      background-image: url("../images/section-service/foto_8.jpg");
+      background-size: cover;
+      grid-area: beight;
+    }
+
+    &--wrap {
+      @include positionCenter;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba($primary-color, 0.7);
+      transition: all 0.4s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 }
 
-.section-buttons {    
-    @include sectionsForm;
-    justify-content: space-between;
-    background-color: $color-sect-btn;
+.section-buttons {
+  @include sectionsForm;
+  justify-content: space-between;
+  background-color: $color-sect-btn;
 
-    @include respond(tab-land) {
-        flex-direction: column;
-    }
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
 }
 
 .section-mail {
-    @include sectionsForm;
+  @include sectionsForm;
 
-    @include respond(phone) {
-        display: block;
-    }
+  @include respond(phone) {
+    display: block;
+  }
 }
-
-
-
-

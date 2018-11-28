@@ -1,203 +1,191 @@
-
 .section-presentation {
-    &__one {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 55rem;
-        grid-template-areas:    
-            "ione ione tb";
+  &__one {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55rem;
+    grid-template-areas: "ione ione tb";
 
-        @include respond(tab-land) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 55rem;
-            grid-template-areas:    
-                "ione tb";
-        }
-
-        @include respond(phone) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 55rem;
-            grid-template-areas:    
-                "tb";
-        }
+    @include respond(tab-land) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 55rem;
+      grid-template-areas: "ione tb";
     }
 
-    &__bg--one {
-        background-image: url('../images/bg_one.jpg');
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        background-size: contain;
-
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 55rem;
+      grid-template-areas: "tb";
     }
-    
-    &__two {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 55rem;
-        grid-template-areas:    
-            "tb itwo itwo";
+  }
 
-        @include respond(tab-land) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 55rem;
-            grid-template-areas:    
-                "tb itwo";
-        }
+  &__bg--one {
+    background-image: url("../images/bg_one.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+  }
 
-        @include respond(phone) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 55rem;
-            grid-template-areas:    
-                "tb";
-        }
+  &__two {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55rem;
+    grid-template-areas: "tb itwo itwo";
+
+    @include respond(tab-land) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 55rem;
+      grid-template-areas: "tb itwo";
     }
 
-    &__bg--two {
-        background-image: url('../images/bg__two.jpg');
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        background-size: contain;
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 55rem;
+      grid-template-areas: "tb";
+    }
+  }
+
+  &__bg--two {
+    background-image: url("../images/bg__two.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+  }
+
+  &__three {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55rem;
+    grid-template-areas: "ithree tb ifour";
+
+    @include respond(tab-land) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 55rem;
+      grid-template-areas: "ithree tb";
     }
 
-    &__three {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 55rem;
-        grid-template-areas:    
-            "ithree tb ifour";
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 55rem;
+      grid-template-areas: "tb";
+    }
+  }
 
-        @include respond(tab-land) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 55rem;
-            grid-template-areas:    
-                "ithree tb";
-        }  
+  &__bg--three {
+    background-image: url("../images/bg__three.jpg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+  }
 
-        @include respond(phone) {
-            grid-template-columns: 1fr;
-            grid-template-rows: 55rem;
-            grid-template-areas:    
-                "tb";
-        }          
+  &__img {
+    position: relative;
+    overflow: hidden;
+
+    &--1 {
+      background-image: url("../images/bicycle_company.jpg");
+      background-size: cover;
+      grid-area: ione;
     }
 
-    &__bg--three {
-        background-image: url('../images/bg__three.jpg');
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        background-size: contain;
+    &--2 {
+      background-image: url("../images/vintage.jpg");
+      background-size: cover;
+      grid-area: itwo;
     }
 
-    &__img {
-        position: relative;
-        overflow: hidden;
-
-        &--1 {
-            background-image: url('../images/bicycle_company.jpg');
-            background-size: cover;
-            grid-area: ione;
-        }
-    
-        &--2 {
-            background-image: url('../images/vintage.jpg');
-            background-size: cover;
-            grid-area: itwo;
-        }
-    
-        &--3{
-            background-image: url('../images/bicycles1.jpg');
-            background-size: cover;    
-            grid-area: ithree;
-        }
-    
-        &--4 {
-            background-image: url('../images/bicycles2.jpg');
-            background-size: cover;
-            grid-area: ifour;
-        }
-        
-        &-wrap {
-            @include positionCenter;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            background: rgba(0, 0, 0, .2);
-            transition: all .4s;
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
-    
-    &__wrap {
-        position: relative;
-        height: 40rem;
-        transition: all 1s;
-        background-color: #fff;
-    
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            display: block;
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: #fff;
-            transform: translateY(50%) rotate(45deg);
-        }
-
-        &:hover {
-            height: 55rem;
-
-            @include respond(phone) {
-                height: 50rem;
-            }
-        }
-
-        &:hover::after {
-            transition: all 1s;
-            background-color: transparent;
-            box-shadow: -2px -2px 1px 1px rgba(0, 0, 0, 0.3);
-        }
+    &--3 {
+      background-image: url("../images/bicycles1.jpg");
+      background-size: cover;
+      grid-area: ithree;
     }
 
-    &__box {
-        position: relative;
-        height: 40rem;
-        padding: 4rem 5rem;
-        text-align: center;
-        font-size: 1.7rem;
-        grid-area: tb;
-
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            bottom: 3rem;
-            left: 50%;
-            width: 6rem;
-            height: 1px;
-            transform: translate(-50%, 50%);
-            background-color: rgb(94, 94, 94);
-
-            @include respond(phone) {
-                display: none;
-            }
-        }
-
-        &:hover::after {
-            transition: all 1s;
-            background-color: transparent;
-        }
+    &--4 {
+      background-image: url("../images/bicycles2.jpg");
+      background-size: cover;
+      grid-area: ifour;
     }
 
-    &__article {
-        height: 10rem;
+    &-wrap {
+      @include positionCenter;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.2);
+      transition: all 0.4s;
+
+      &:hover {
+        opacity: 1;
+      }
     }
+  }
+
+  &__wrap {
+    position: relative;
+    height: 40rem;
+    transition: all 1s;
+    background-color: #fff;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #fff;
+      transform: translateY(50%) rotate(45deg);
+    }
+
+    &:hover {
+      height: 55rem;
+
+      @include respond(phone) {
+        height: 50rem;
+      }
+    }
+
+    &:hover::after {
+      transition: all 1s;
+      background-color: transparent;
+      box-shadow: -2px -2px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__box {
+    position: relative;
+    height: 40rem;
+    padding: 4rem 5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    grid-area: tb;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 3rem;
+      left: 50%;
+      width: 6rem;
+      height: 1px;
+      transform: translate(-50%, 50%);
+      background-color: rgb(94, 94, 94);
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &:hover::after {
+      transition: all 1s;
+      background-color: transparent;
+    }
+  }
+
+  &__article {
+    height: 10rem;
+  }
 }
-

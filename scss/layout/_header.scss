@@ -1,24 +1,22 @@
 .header {
-   height: 95vh;
-   background-image: url(../images/header.jpg); 
-   background-size: cover;
-   background-position: top;
-   padding:  2rem 0;
+  height: 95vh;
+  background-image: url(../images/header.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 2rem 0;
 
-   @include respond(tab-port) {
-       height: auto;
-       padding: 4rem 0;
-   }
+  @include respond(tab-port) {
+    height: auto;
+    padding: 4rem 0;
+  }
 }
 
 .logo-box {
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 
-    @include respond(tab-port) {
-        display: block;
-        margin-bottom: 5rem; 
-    }
+  @include respond(tab-port) {
+    display: block;
+    margin-bottom: 5rem;
+  }
 }
-
-

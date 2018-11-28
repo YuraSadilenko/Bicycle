@@ -299,7 +299,8 @@ html {
         background-color: rgba(247, 247, 247, 0.3); } }
   .navigation__link {
     text-decoration: none;
-    color: #4d4959; }
+    color: #4d4959;
+    outline: none; }
 
 .nav-logo {
   transition: .6s; }
