@@ -47,14 +47,14 @@
   }
 }
 
-.nav-logo {
-  transition: 0.6s;
+// .nav-logo {
+//   transition: 0.6s;
 
-  &:hover {
-    transform: translateY(5rem) scale(1.6) rotate(360deg);
+//   &:hover {
+//     transform: translateY(5rem) scale(1.6) rotate(360deg);
 
-    @include respond(tab-port) {
-      transform: translateY(0) scale(1.2) rotate(0deg);
-    }
-  }
-}
+//     @include respond(tab-port) {
+//       transform: translateY(0) scale(1.2) rotate(0deg);
+//     }
+//   }
+// }

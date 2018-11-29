@@ -11,12 +11,4 @@
   }
 }
 
-.logo-box {
-  display: none;
-  text-align: center;
 
-  @include respond(tab-port) {
-    display: block;
-    margin-bottom: 5rem;
-  }
-}
