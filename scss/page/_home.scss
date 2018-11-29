@@ -1,4 +1,4 @@
-.section-story {
+.story {
   @include sectionsForm;
   background-color: $bg-section-color;
 
@@ -6,7 +6,7 @@
   }
 }
 
-.section-comments {
+.comments {
   position: relative;
   @include sectionsForm;
   width: 100%;
@@ -14,7 +14,7 @@
   background-color: $bg-section-color;
 }
 
-.section-service {
+.service {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -99,7 +99,7 @@
   }
 }
 
-.section-buttons {
+.buttons {
   @include sectionsForm;
   justify-content: space-between;
   background-color: $color-sect-btn;
@@ -109,7 +109,7 @@
   }
 }
 
-.section-mail {
+.mail {
   @include sectionsForm;
 
   @include respond(phone) {

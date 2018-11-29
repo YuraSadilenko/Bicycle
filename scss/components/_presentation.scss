@@ -1,4 +1,4 @@
-.section-presentation {
+.presentation {
   &__one {
     display: grid;
     width: 100%;
@@ -17,13 +17,6 @@
       grid-template-rows: 55rem;
       grid-template-areas: "tb";
     }
-  }
-
-  &__bg--one {
-    background-image: url("../images/bg_one.jpg");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: contain;
   }
 
   &__two {
@@ -46,11 +39,27 @@
     }
   }
 
-  &__bg--two {
-    background-image: url("../images/bg__two.jpg");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: contain;
+  &__bg {
+    &--one {
+      background-image: url("../images/bg_one.jpg");
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-size: contain;
+    }
+
+    &--two {
+      background-image: url("../images/bg__two.jpg");
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-size: contain;
+    }
+
+    &--three {
+      background-image: url("../images/bg__three.jpg");
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-size: contain;
+    }
   }
 
   &__three {
@@ -71,13 +80,6 @@
       grid-template-rows: 55rem;
       grid-template-areas: "tb";
     }
-  }
-
-  &__bg--three {
-    background-image: url("../images/bg__three.jpg");
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: contain;
   }
 
   &__img {
