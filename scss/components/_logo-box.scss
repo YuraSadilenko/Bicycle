@@ -1,0 +1,14 @@
+.logo-box {
+  display: none;
+  text-align: center;
+  transition: .7s;
+   
+  &:hover {
+    transform: translateY(0) scale(1.2) rotate(0deg);
+  }
+
+  @include respond(tab-port) {
+    display: block;
+    margin-bottom: 5rem;
+  }
+}

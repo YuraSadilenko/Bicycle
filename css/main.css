@@ -77,8 +77,6 @@ html {
   color: #8c8e90;
   line-height: 1.7; }
   .paragraph--justify {
-    color: #8c8e90;
-    line-height: 1.7;
     text-align: justify; }
 
 .span--gray {
@@ -229,18 +227,14 @@ html {
 
 .logo-box {
   display: none;
-  text-align: center; }
+  text-align: center;
+  transition: .7s; }
+  .logo-box:hover {
+    transform: translateY(0) scale(1.2) rotate(0deg); }
   @media (max-width: 60em) {
     .logo-box {
       display: block;
       margin-bottom: 5rem; } }
-  .logo-box__nav-logo {
-    transition: 0.6s; }
-    .logo-box__nav-logo:hover {
-      transform: translateY(5rem) scale(1.6) rotate(360deg); }
-      @media (max-width: 60em) {
-        .logo-box__nav-logo:hover {
-          transform: translateY(0) scale(1.2) rotate(0deg); } }
 
 .mail-box {
   text-align: center; }
@@ -315,6 +309,10 @@ html {
         font-size: 3rem;
         font-weight: 500;
         background-color: rgba(247, 247, 247, 0.3); } }
+    .navigation__item__main-logo {
+      transition: 0.6s; }
+      .navigation__item__main-logo:hover {
+        transform: translateY(5rem) scale(1.6) rotate(360deg); }
   .navigation__link {
     text-decoration: none;
     color: #4d4959;

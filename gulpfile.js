@@ -22,11 +22,11 @@ gulp.task('autoprefix', function() {
 });
 
 gulp.task('server', function() {
-    gulp.src('')
-      .pipe(server({
-        livereload: true,
-        defaultFile: "index.html",
-        directoryListing: false,
-        open: true
-      }));
+  gulp.src('')
+    .pipe(server({
+      livereload: true,
+      defaultFile: "index.html",
+      directoryListing: false,
+      open: true
+    }));
   });
