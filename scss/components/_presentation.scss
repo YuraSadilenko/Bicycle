@@ -127,7 +127,7 @@
   &__wrap {
     position: relative;
     height: 40rem;
-    transition: all 1s;
+    transition: all .6s;
     background-color: #fff;
 
     &::after {
@@ -155,39 +155,52 @@
       background-color: transparent;
       box-shadow: -2px -2px 1px 1px rgba(0, 0, 0, 0.3);
     }
-  }
 
-  &__box {
-    position: relative;
-    height: 40rem;
-    padding: 4rem 5rem;
-    text-align: center;
-    font-size: 1.7rem;
-    grid-area: tb;
-
-    &::after {
+    &::before {
       content: "";
       position: absolute;
       display: block;
-      bottom: 3rem;
+      bottom: 5%;
       left: 50%;
       width: 6rem;
       height: 1px;
-      transform: translate(-50%, 50%);
+      transform: translate(-40%, -50%);
       background-color: rgb(94, 94, 94);
 
       @include respond(phone) {
         display: none;
       }
-    }
 
-    &:hover::after {
-      transition: all 1s;
-      background-color: transparent;
+      &:hover::before {
+        transition: all .6s;
+        display: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    height: 34rem;
+    padding: 4rem 5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    grid-area: tb;
+    overflow: hidden;
+    transition: .6s;
+    
+    &:hover {
+      height: 55rem;
     }
   }
 
   &__article {
-    height: 10rem;
+    display: block;
+    height: 25rem;
+    text-overflow: clip;
+
+    // &:hover {
+    //   height: 50rem;
+    // }
   }
 }

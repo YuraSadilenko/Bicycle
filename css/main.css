@@ -417,7 +417,7 @@ html {
 .presentation__wrap {
   position: relative;
   height: 40rem;
-  transition: all 1s;
+  transition: all .6s;
   background-color: #fff; }
   .presentation__wrap::after {
     content: "";
@@ -438,33 +438,40 @@ html {
     transition: all 1s;
     background-color: transparent;
     box-shadow: -2px -2px 1px 1px rgba(0, 0, 0, 0.3); }
-
-.presentation__box {
-  position: relative;
-  height: 40rem;
-  padding: 4rem 5rem;
-  text-align: center;
-  font-size: 1.7rem;
-  grid-area: tb; }
-  .presentation__box::after {
+  .presentation__wrap::before {
     content: "";
     position: absolute;
     display: block;
-    bottom: 3rem;
+    bottom: 5%;
     left: 50%;
     width: 6rem;
     height: 1px;
-    transform: translate(-50%, 50%);
+    transform: translate(-40%, -50%);
     background-color: #5e5e5e; }
     @media (max-width: 40.5em) {
-      .presentation__box::after {
+      .presentation__wrap::before {
         display: none; } }
-  .presentation__box:hover::after {
-    transition: all 1s;
-    background-color: transparent; }
+    .presentation__wrap::before:hover::before {
+      transition: all .6s;
+      display: none;
+      background-color: transparent; }
+
+.presentation__box {
+  position: relative;
+  height: 34rem;
+  padding: 4rem 5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  grid-area: tb;
+  overflow: hidden;
+  transition: .6s; }
+  .presentation__box:hover {
+    height: 55rem; }
 
 .presentation__article {
-  height: 10rem; }
+  display: block;
+  height: 25rem;
+  text-overflow: clip; }
 
 .story-box {
   width: 100%;
