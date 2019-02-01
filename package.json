@@ -18,6 +18,10 @@
   "homepage": "https://github.com/YuraSadilenko/Bicycle#readme",
   "dependencies": {
     "gulp-autoprefixer": "^6.0.0",
+    "smoothscroll-polyfill": "^0.4.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
     "gulp-server-livereload": "^1.9.2"
   }
